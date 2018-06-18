@@ -2,17 +2,17 @@ package com.company;
 
 public class Vehicle {
 
-    protected int speed = 0;
+    protected String speed = "0";
 
-    protected Vehicle(int speed){
-        setSpeed(speed);
+    public Vehicle() {
+
     }
 
-    public int getSpeed() {
+    public String getSpeed() {
         return speed;
     }
 
     public void setSpeed(int speed) {
-        this.speed = speed;
+        this.speed = "The Speed is going " + speed + " mph";
     }
 }
