@@ -71,4 +71,15 @@ public class Car extends Vehicle {
     public String getPassAnotherCar() {
         return passAnotherCar;
     }
+
+    @Override
+    public String getSpeed() {
+        return speed;
+    }
+
+    @Override
+    public void setSpeed(int speed) {
+        this.speed = "The " + carColor + " " + carMake
+                + " is going " + speed + " mph";
+    }
 }
