@@ -11,9 +11,12 @@ public class Car extends Vehicle {
     private String passEmissions;
     private String passAnotherCar;
 
-    public Car(String carMake, String carColor) {
-        this.carMake = carMake;
+    public Car() {
+    }
+
+    public Car(String carColor, String carMake) {
         this.carColor = carColor;
+        this.carMake = carMake;
         setStart();
         setAccelerate();
         setCheckEmissions();
