@@ -5,6 +5,7 @@ public class Car extends Vehicle {
     private String carMake;
     private String carColor;
     private String start;
+    private String stop;
     private String accelerate;
     private String checkEmissions;
     private String passEmissions;
@@ -17,6 +18,7 @@ public class Car extends Vehicle {
         setAccelerate();
         setCheckEmissions();
         setPassEmissions();
+        setStop();
     }
 
     public String getCheckEmissions() {
@@ -54,6 +56,16 @@ public class Car extends Vehicle {
         accelerate = "The " + carColor + " " + carMake
                 + " is accelerating";
     }
+
+    public String getStop() {
+        return stop;
+    }
+
+    public void setStop() {
+        stop = "The " + carColor + " " + carMake
+                + " is stopped";
+    }
+
 
     public String getCarMake() {
         return carMake;
