@@ -2,6 +2,7 @@ package com.company;
 
 public class Car extends Vehicle {
 
+    Driver driver = new Driver();
     private String carMake;
     private String carColor;
     private String start;
@@ -14,9 +15,10 @@ public class Car extends Vehicle {
     public Car() {
     }
 
-    public Car(String carColor, String carMake) {
+    public Car(String carColor, String carMake, String driverName) {
         this.carColor = carColor;
         this.carMake = carMake;
+        driver.setDriverName(driverName);
         setStart();
         setAccelerate();
         setCheckEmissions();
@@ -91,6 +93,10 @@ public class Car extends Vehicle {
 
     public String getPassAnotherCar() {
         return passAnotherCar;
+    }
+
+    public String getDriverInfo() {
+        return "The " + carColor + " " + carMake + " is driven by " + driver.getDriverName();
     }
 
     @Override

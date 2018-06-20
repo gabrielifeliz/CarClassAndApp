@@ -4,9 +4,11 @@ public class CarApp {
 
     public static void main(String[] args) {
 
-        Car grayJaguar = new Car("gray", "Jaguar");
-        Car redCadillac = new Car("red", "Cadillac");
+        Car grayJaguar = new Car("gray", "Jaguar", "Bobby");
+        Car redCadillac = new Car("red", "Cadillac", "Ernesto");
 
+        System.out.println(grayJaguar.getDriverInfo());
+        System.out.println(redCadillac.getDriverInfo());
         System.out.println(grayJaguar.getStart());
         System.out.println(redCadillac.getStart());
         System.out.println(grayJaguar.getAccelerate());
