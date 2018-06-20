@@ -42,28 +42,34 @@ public class Car extends Vehicle {
                 + " passes its emission test";
     }
 
+    @Override
     public String getStart() {
         return start;
     }
 
+    @Override
     public void setStart() {
         start = "The " + carColor + " " + carMake
                 + " is starting";
     }
 
+    @Override
     public String getAccelerate(){
         return accelerate;
     }
 
+    @Override
     public void setAccelerate(){
         accelerate = "The " + carColor + " " + carMake
                 + " is accelerating";
     }
 
+    @Override
     public String getStop() {
         return stop;
     }
 
+    @Override
     public void setStop() {
         stop = "The " + carColor + " " + carMake
                 + " is stopped";
